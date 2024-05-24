@@ -20,6 +20,9 @@
                         <asp:Label ID="lblError" runat="server" Text="" CssClass="text-danger"></asp:Label>
                         <br />
                         <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn btn-primary" OnClick="btnLogin_Click" />
+                        <p>
+              Don't have an account? Sign up <a href="Registration">here</a>.
+            </p>
                     </div>
                 </div>
             </div>

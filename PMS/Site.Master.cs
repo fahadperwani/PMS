@@ -11,7 +11,7 @@ namespace PMS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["patient"] != null) linkBookAppointment.Visible = true;
         }
     }
 }

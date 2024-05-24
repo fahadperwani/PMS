@@ -3,6 +3,7 @@ using PMS.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -32,6 +33,7 @@ namespace PMS
                 if (doctor != null)
                 {
                     // Login successful, redirect to doctor dashboard
+                    Session.Add("doctor", doctor);
                     Response.Redirect("Default.aspx");
                 }
                 else
@@ -49,6 +51,7 @@ namespace PMS
                 if (patient != null)
                 {
                     // Login successful, redirect to patient dashboard
+                    Session.Add("patient", patient);
                     Response.Redirect("Default.aspx");
                 }
                 else
